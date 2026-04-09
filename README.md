@@ -63,14 +63,54 @@ skills/
 This repository does not bundle every external tool. A typical working environment includes:
 
 - Codex with local skills enabled
-- CNKI-related skills
-- Google Scholar-related skills
+- CNKI helper skills
+- Google Scholar helper skills
 - Zotero and a usable Zotero connector or Zotero MCP
 - Obsidian and an Obsidian CLI workflow
 - NotebookLM access
 - A browser automation path, such as Chrome MCP or an equivalent web-access layer
 
-See [docs/setup-and-dependencies.md](./docs/setup-and-dependencies.md) for setup notes and environment assumptions.
+### Required helper skills by stage
+
+The three public skills in this repository are not fully standalone. They assume the following helper skills or equivalent capabilities are already available in your Codex environment.
+
+#### Stage 1: `research-review-01-keyword-calibration-search`
+
+- `cnki-search`
+- `cnki-advanced-search`
+- `cnki-parse-results`
+- `cnki-paper-detail`
+- `cnki-download`
+- `cnki-navigate-pages`
+- `gs-search`
+- `gs-advanced-search`
+- `gs-cited-by`
+- `gs-fulltext`
+- a usable Zotero integration path
+- an Obsidian note-writing path
+
+#### Stage 2: `research-review-02-notebooklm-prompts-execution`
+
+- a visible browser automation path, such as `web-access` or an equivalent Chrome automation layer
+- a usable Zotero integration path for locating source PDFs
+- NotebookLM access
+
+#### Stage 3: `research-review-03-notebooklm-recovery`
+
+- Obsidian note-writing capability
+- NotebookLM access
+- if recovery is done from a live browser session, a browser automation path
+
+### Required MCP or equivalent integrations
+
+In practice, most users will need at least:
+
+- a Zotero MCP or an equivalent local Zotero connector
+- an Obsidian CLI or equivalent note-writing automation
+- a browser automation layer
+- NotebookLM access
+
+See [docs/setup-and-dependencies.md](./docs/setup-and-dependencies.md) for a more explicit dependency checklist.
 
 ## Important note on portability
 

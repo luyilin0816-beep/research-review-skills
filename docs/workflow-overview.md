@@ -115,6 +115,36 @@ NotebookLM 主要用于模块初稿，例如：
 - NotebookLM 提示词
 - NotebookLM 回收版与整理版
 
+## 推荐依赖技能与集成
+
+这套公开 workflow 不是完全脱离环境即可独立运行。实际落地时，建议至少补齐以下 helper skills 或等效能力。
+
+### 前综述 01 依赖
+
+- `cnki-search`
+- `cnki-advanced-search`
+- `cnki-parse-results`
+- `cnki-paper-detail`
+- `cnki-download`
+- `cnki-navigate-pages`
+- `gs-search`
+- `gs-advanced-search`
+- `gs-cited-by`
+- `gs-fulltext`
+- Zotero MCP 或等效 Zotero 自动化
+- Obsidian CLI 或等效笔记写入能力
+
+### 前综述 02 依赖
+
+- `web-access` 或等效浏览器自动化能力
+- Zotero MCP 或等效 PDF 定位能力
+- NotebookLM 可访问与可登录状态
+
+### 前综述 03 依赖
+
+- Obsidian CLI 或等效笔记写入能力
+- 如需从 live NotebookLM 页面抓取内容，需浏览器自动化能力
+
 ## 默认执行顺序
 
 1. 读取研究输入并理解任务
